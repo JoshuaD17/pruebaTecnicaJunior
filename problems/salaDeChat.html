@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sala de Chat</title>
+</head>
+<body>
+    <div id="salida"></div>
+    <script>
+        let entrada = prompt("Inica la converzación: ");
+        let cadena = entrada.toLowerCase();;
+        let tam = cadena.length;
+        let temp = "";
+        let salida = true;
+
+        for (var i = 1; i < tam; i++){
+            if(cadena[i] != cadena[i + 1]){
+                temp = temp + cadena[i];
+            }
+            console.log(temp);
+        }
+        if (temp === "hola") {
+            console.log(salida);
+        }else{
+            salida = false
+            console.log(salida);
+        }
+        
+    </script>
+</body>
+</html>

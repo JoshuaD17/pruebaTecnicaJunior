@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuerdas Periodicas</title>
+</head>
+<body>
+    <div id="salida"></div>
+    <script>
+        let cadena = prompt("Escribe la cadena de caracteres: ");
+        let coinci = cadena.charAt(0);
+        let cont = 0;
+        let salida;
+
+        for (var i = 1; i < cadena.length; i++){
+             console.log(i);
+            if (cadena[i] != coinci){
+                cont++;
+            }
+            if(cadena[i] === coinci){
+                break;
+            }
+        }
+        
+        if (cont == 0){
+            salida = alert("El periodo más pequeño es de 1");
+        }
+        else{
+            salida = alert("El periodo más pequeño es de " +i );
+        }
+    </script>
+</body>
+</html>
